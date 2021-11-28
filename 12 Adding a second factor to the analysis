@@ -1,0 +1,8 @@
+import pandas as pd
+
+
+# Calculate the search rate for each combination of gender and violation
+print(ri.groupby(["driver_gender","violation"]).search_conducted.mean())
+
+# Calculate the search rate for each combination of gender and violation
+print(ri.groupby(["violation","driver_gender"]).search_conducted.mean())
